@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+
+}
+
+html body {
+    height: 100;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #234;
+}
+
+section {
+    height: 100%;
+    display: grid;
+    gap: 3px;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+
+    align-content: space-around;
+    justify-content: space-around;
+
+    place-content: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    place-items: center;
+
+}
+
+div:last-child {
+    background-color: #f77;
+    justify-self: end;
+}
